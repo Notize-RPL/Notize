@@ -1,0 +1,1076 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --orange:#ff7800;
+    --black: #130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+    --border:.2rem solid rgba(0,0,0,.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#eee;
+}
+
+section{
+    padding:2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:var(--black);
+}
+
+.heading span{
+    background: var(--orange);
+    color:#fff;
+    display: inline-block;
+    padding:.5rem 3rem;
+    clip-path: polygon(100% 0, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.8rem 3rem;
+    width: 270px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;    
+    background: #89B0AE;
+    border-radius: 13px;
+    color: #FAF9F9;
+    cursor: pointer;
+}
+
+
+.btn:hover{
+    background: #555B6E;
+    color:#FAF9F9;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:2rem 9%;
+    background:#89b0ae;
+    box-shadow: var(--box-shadow);
+    width: 1920px;
+    height: 80px;
+}
+
+.header img{
+    height: 5rem;
+} 
+
+.header .login{
+    position: absolute;
+    width: 85.99px;
+    height: 30.77px;
+    left: 1200px;
+    top: 26px;
+    font-size: 20px;
+    color: #555B6E;
+    font-weight: bold;
+}
+
+.header .signup{
+    margin-top: 1rem;
+    display: inline-block;
+    padding-left: 5px;
+    width: 270px;
+    background: #FAF9F9;
+    position: absolute;
+    width: 85.99px;
+    height: 30.77px;
+    left: 1270px;
+    top: 17px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #555B6E;
+    font-weight: bold;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.home{
+    display: flex;
+    left: 252px;
+    top: 354px;
+    background: #FAF9F9;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+    height: 1600px;
+}
+
+.home .content{
+    text-align: left;
+    float: left;
+    width:60rem;
+}
+
+.home .content h3{
+    color:var(--black);
+    font-size: 5rem;
+}
+
+.home .content h3 span{
+    color:#89b0ae;
+}
+
+.home .content p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+.home .content .fitur{
+    position: absolute;
+    top: 750px;
+    left: 610px;
+    font-size: 3rem;
+}
+
+.home .content .photo{
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 800px;
+    top: 100px;
+}
+
+.home .content .p1{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 180px;
+    top: 861.3px;
+}
+
+.home .content .p2{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 630px;
+    top: 861.3px;
+}
+
+.home .content .p3{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    left: 1100px;
+    top: 861.3px;
+}
+
+.home .content .descj{
+    box-sizing: border-box;
+    position: absolute;
+    padding-top: 13px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    left: 95px;
+    top: 1080px;
+    border: 3px solid #000000;
+}
+
+.home .content .desct{
+    box-sizing: border-box;
+    position: absolute;
+    padding-top: 13px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    left: 550px;
+    top: 1080px;
+    border: 3px solid #000000;
+}
+
+.home .content .descn{
+    box-sizing: border-box;
+    position: absolute;
+    padding-top: 13px;
+    text-align: center;
+    width: 300px;
+    height: 100px;
+    left: 1018px;
+    top: 1080px;
+    border: 3px solid #000000;
+}
+
+.home .content .descja{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 95px;
+    top: 1200px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.home .content .desctu{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 550px;
+    top: 1200px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.home .content .descca{
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    left: 1018px;
+    top: 1200px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer{
+    background: #89b0ae;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap:73rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 2.5rem;
+    color:#555B6E;
+    padding:1rem 0;
+}
+
+.footer .box-container .box img{
+    height: 5rem;
+} 
+/* .footer .box-container .box h3 i{
+    color:#FAF9F9;
+} */
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.5rem;
+    color:#130f40;
+}
+
+.footer .box-container .box .links i{
+    color:#FAF9F9;
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+}
+
+
+.footer .box-container .box p{
+    line-height: 1.8;
+    font-size: 1.5rem;
+    /* color:var(--light-color); */
+    padding:1rem 0;
+}
+
+.footer .credit{
+    text-align: center;
+    font-size: 2rem;
+    color:#130f40;
+}
+
+.footer .credit span{
+    color:#FAF9F9;
+    width: 2rem;
+    height: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries  */
+/* 
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    .header{
+        padding:2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:768px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .search-form{
+        width:90%;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:110%; right:-110%;
+        width:30rem;
+        box-shadow: var(--box-shadow);
+        border-radius: .5rem;
+        background: #fff;
+    }
+
+    .header .navbar.active{
+        right:2rem;
+        transition: .4s linear;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display: block;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .heading{
+        font-size: 2.5rem;
+    }
+
+    .footer{
+        text-align: center;
+    }
+
+    .footer .box-container .box .payment-img{
+        margin: 2rem auto;
+    }
+
+} */
+
+/* Landing Page */
+/* 
+position: relative;
+width: 1920px;
+height: 1951px;
+
+background: #FAF9F9; */
+
+
+/* Navbar */
+/* 
+position: absolute;
+width: 1920px;
+height: 117px;
+left: 0px;
+top: 0px; */
+
+
+
+/* Rectangle 31 */
+/* 
+position: absolute;
+width: 1920px;
+height: 117px;
+left: 0px;
+top: 0px;
+
+background: #89B0AE; */
+
+
+/* Group 11 */
+/* 
+position: absolute;
+width: 221px;
+height: 75px;
+left: 253px;
+top: 21px; */
+
+
+
+/* Logo 1 */
+/* 
+position: absolute;
+width: 75px;
+height: 75px;
+left: 253px;
+top: 21px;
+
+background: url(Logo.png);
+border-radius: 13px; */
+
+
+/* Notize */
+/* 
+position: absolute;
+width: 126px;
+height: 52px;
+left: 348px;
+top: 32px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+
+color: #555B6E; */
+
+
+
+/* Group 6 */
+/* 
+position: absolute;
+width: 274px;
+height: 69.18px;
+left: 1392px;
+top: 23px; */
+
+
+
+/* Log in */
+/* 
+position: absolute;
+width: 85.99px;
+height: 30.77px;
+left: 1392px;
+top: 42.12px;
+
+background: #555B6E; */
+
+
+/* Rectangle 33 */
+
+/* position: absolute;
+width: 159.3px;
+height: 69.18px;
+left: 1506.7px;
+top: 23px;
+
+background: #FAF9F9;
+border-radius: 13px; */
+
+
+/* Sign up */
+/* 
+position: absolute;
+width: 107.64px;
+height: 30.77px;
+left: 1532.19px;
+top: 42.12px;
+
+background: #555B6E; */
+
+
+/* Content */
+/* 
+position: absolute;
+width: 1414px;
+height: 638px;
+left: 252px;
+top: 277px; */
+
+
+
+/* Group 7 */
+/* 
+position: absolute;
+width: 638px;
+height: 638px;
+left: 1028px;
+top: 277px; */
+
+
+
+/* Ellipse 1 */
+/* 
+position: absolute;
+width: 537px;
+height: 537px;
+left: 1079px;
+top: 303px;
+
+background: #BEE3DB; */
+
+
+/* 7228764 1 */
+/* 
+position: absolute;
+width: 638px;
+height: 638px;
+left: 1028px;
+top: 277px;
+
+background: url(7228764.png); */
+
+
+/* Ellipse 2 */
+/* 
+position: absolute;
+width: 423px;
+height: 32px;
+left: 1154px;
+top: 869px;
+
+background: rgba(196, 196, 196, 0.75);
+filter: blur(20px); */
+
+
+/* Support System Kamu. */
+/* 
+position: absolute;
+width: 730px;
+height: 238px;
+left: 252px;
+top: 354px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 800;
+font-size: 96px;
+line-height: 121px;
+
+color: #000000; */
+
+
+
+/* Notize bisa membantu kamu mengelola hiruk pikuk kegiatan kamu. Dengan fitur-fitur Notize, kehidupan mu bisa jadi lebih tertata. */
+/* 
+position: absolute;
+width: 670px;
+height: 121px;
+left: 253px;
+top: 604px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+
+color: #000000; */
+
+
+
+/* Group 12 */
+/* 
+position: absolute;
+width: 336px;
+height: 80px;
+left: 252px;
+top: 757px; */
+
+
+
+/* Rectangle 41 */
+/* 
+position: absolute;
+width: 336px;
+height: 80px;
+left: 252px;
+top: 757px;
+
+background: #89B0AE;
+border-radius: 17px; */
+
+
+/* Gabung Sekarang! */
+
+/* position: absolute;
+width: 296px;
+height: 42px;
+left: 272px;
+top: 776px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 32px;
+line-height: 40px;
+text-align: center;
+
+color: #FAF9F9; */
+
+
+
+/* Feature */
+/* 
+position: absolute;
+width: 1412px;
+height: 611px;
+left: 254px;
+top: 1014px; */
+
+
+
+/* Atur jadwal kegiatan kamu dengan membuat jadwal di Notize. */
+
+/* position: absolute;
+width: 418px;
+height: 121px;
+left: 254px;
+top: 1456px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+
+color: #000000; */
+
+
+
+/* Dapatkan reminder ketika ada deadline mendekat karena Notize tersinkronasi dengan Google Calendar. */
+
+/* position: absolute;
+width: 418px;
+height: 169px;
+left: 751px;
+top: 1456px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+
+color: #000000; */
+
+
+
+/* Catat hal penting dan jangan takut hilang karena Notize akan menjaganya dengan adanya fitur Recycle bin. */
+
+/* position: absolute;
+width: 418px;
+height: 169px;
+left: 1248px;
+top: 1456px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 40px;
+
+color: #000000; */
+
+
+
+/* Fitur Notize */
+
+/* position: absolute;
+width: 433px;
+height: 72px;
+left: 743px;
+top: 1014px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 800;
+font-size: 64px;
+line-height: 81px;
+text-align: center;
+
+color: #000000; */
+
+
+
+/* Group 8 */
+
+/* position: absolute;
+width: 157px;
+height: 157px;
+left: 385px;
+top: 1129px; */
+
+
+
+/* Rectangle 34 */
+/* 
+position: absolute;
+width: 157px;
+height: 157px;
+left: 385px;
+top: 1129px;
+
+background: #BEE3DB; */
+
+
+/* 1 */
+
+/* position: absolute;
+width: 45px;
+height: 77px;
+left: 441px;
+top: 1169px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 81px;
+text-align: center;
+
+color: #000000; */
+
+
+
+/* Group 9 */
+
+/* position: absolute;
+width: 157px;
+height: 157px;
+left: 881px;
+top: 1129px; */
+
+
+
+/* Rectangle 35 */
+
+/* position: absolute;
+width: 157px;
+height: 157px;
+left: 881px;
+top: 1129px;
+
+background: #BEE3DB; */
+
+
+/* 2 */
+
+/* position: absolute;
+width: 45px;
+height: 77px;
+left: 937px;
+top: 1168px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 81px;
+text-align: center;
+
+color: #000000; */
+
+
+
+/* Group 10 */
+/* 
+position: absolute;
+width: 157px;
+height: 157px;
+left: 1378px;
+top: 1129px; */
+
+
+
+/* Rectangle 36 */
+/* 
+position: absolute;
+width: 157px;
+height: 157px;
+left: 1378px;
+top: 1129px;
+
+background: #BEE3DB; */
+
+
+/* 3 */
+
+/* position: absolute;
+width: 45px;
+height: 77px;
+left: 1434px;
+top: 1168px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 81px;
+text-align: center;
+
+color: #000000; */
+
+
+
+/* Rectangle 37 */
+
+/* box-sizing: border-box;
+
+position: absolute;
+width: 418px;
+height: 104px;
+left: 751px;
+top: 1329px;
+
+border: 3px solid #000000; */
+
+
+/* Rectangle 39 */
+
+/* box-sizing: border-box;
+
+position: absolute;
+width: 418px;
+height: 104px;
+left: 254px;
+top: 1329px;
+
+border: 3px solid #000000; */
+
+
+/* Rectangle 38 */
+
+/* box-sizing: border-box;
+
+position: absolute;
+width: 418px;
+height: 104px;
+left: 1248px;
+top: 1329px;
+
+border: 3px solid #000000; */
+
+
+/* List Tugas */
+
+/* position: absolute;
+width: 390px;
+height: 77px;
+left: 765px;
+top: 1350px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+text-align: center;
+
+color: #000000; */
+
+
+
+/* Jadwal */
+
+/* position: absolute;
+width: 390px;
+height: 77px;
+left: 268px;
+top: 1350px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+text-align: center;
+
+color: #000000; */
+
+
+
+/* Note */
+/* 
+position: absolute;
+width: 390px;
+height: 77px;
+left: 1262px;
+top: 1350px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 60px;
+text-align: center;
+
+color: #000000; */
+
+
+
+/* Footer */
+/* 
+position: absolute;
+width: 1920px;
+height: 226px;
+left: 0px;
+top: 1725px; */
+
+
+
+/* Rectangle 40 */
+
+/* position: absolute;
+width: 1920px;
+height: 226px;
+left: 0px;
+top: 1725px;
+
+background: #89B0AE;
+ */
+
+/* Group 11 */
+/* 
+position: absolute;
+width: 221px;
+height: 75px;
+left: 253px;
+top: 1763px; */
+
+
+
+/* Logo 1 */
+/* 
+position: absolute;
+width: 75px;
+height: 75px;
+left: 253px;
+top: 1763px;
+
+background: url(Logo.png);
+border-radius: 13px; */
+
+
+/* Notize */
+
+/* position: absolute;
+width: 126px;
+height: 52px;
+left: 348px;
+top: 1774px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+
+color: #555B6E; */
+
+
+
+/* Aplikasi untuk membantu kamu mengelola tugas, pekerjaan, hidup kamu. */
+
+/* position: absolute;
+width: 418px;
+height: 56px;
+left: 248px;
+top: 1851px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+
+color: #000000; */
+
+
+
+/* Alghaniyu Naufal Cantika Putri Febry Syaman Indah Resti Rifqi Fajar */
+
+/* position: absolute;
+width: 175px;
+height: 129px;
+left: 1402px;
+top: 1794px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+
+color: #000000; */
+
+
+
+/* ©2022 Kelompok 5 RPL */
+
+/* position: absolute;
+width: 210px;
+height: 25px;
+left: 855px;
+top: 1910px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+
+color: #000000; */
+
+
+
+/* We Make This! */
+
+/* position: absolute;
+width: 130px;
+height: 25px;
+left: 1402px;
+top: 1763px;
+
+font-family: 'Outfit';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 25px;
+
+color: #000000;
+ */

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" , sans-serif;
+}
+.sidebar{
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 50px;
+  background: #89b0ae;
+  z-index: 99;
+  transition: all 0.5s ease;
+}
+.sidebar.open{
+  width: 250px;
+}
+.sidebar .logo-details{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #BEE3DB;
+  padding-top: 5px;
+}
+img#logo{
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+}
+img#nama{
+  margin-left: 12px;
+  width: 23px;
+  position: fixed;
+  bottom: 20px;
+}
+.sidebar .logo-details .icon{
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.sidebar .logo-details .logo_name{
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0;
+  transition: all 0.5s ease;
+  padding-left: 14px;
+}
+.sidebar.open .logo-details .icon,
+.sidebar.open .logo-details .logo_name{
+  opacity: 1;
+}
+.sidebar #nama{
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.sidebar.open #nama{
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+.sidebar .logo-details #btn{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  transition: all 0.4s ease;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  color: #555B6E;
+}
+.sidebar.open .logo-details #btn{
+  text-align: right;
+}
+.sidebar i{
+  min-width: 50px;
+}
+.sidebar .nav-list{
+  height: 100%;
+}
+.sidebar li{
+  position: relative;
+  list-style: none;
+}
+.sidebar.open li .tooltip{
+  display: none;
+}
+.sidebar li a{
+  background-image: linear-gradient(#FFD6BA, #FFD6BA);
+  background-repeat: no-repeat;
+  background-size:0% 100%;
+  background-position-x: right;
+  transition: background-size 500ms;
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.sidebar li a .active{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+  padding: 30px;
+  background: #FFD6BA;
+  background-size:100% 100%;
+  background-position-x: left;
+  padding-right: 42.5%;
+}
+.sidebar li a .links_name#j:hover{
+  padding: 30px;
+  background: #FFD6BA;
+  background-size:100% 100%;
+  background-position-x: left;
+  padding-right: 42.5%;
+}
+.sidebar li a .links_name#t:hover{
+  padding: 30px;
+  background: #FFD6BA;
+  background-size:100% 100%;
+  background-position-x: left;
+  padding-right: 50%;
+}
+.sidebar li a .links_name#n:hover{
+  padding: 30px;
+  background: #FFD6BA;
+  background-size:100% 100%;
+  background-position-x: left;
+  padding-right: 59%;
+}
+.sidebar .nav-list .links_name{
+  color: #555B6E;
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.4s;
+  padding-left: 14px;
+  padding: 20px;
+}
+.sidebar .nav-list .active{
+  color: #555B6E;
+  font-size: 30px;
+  font-weight: bold;
+  white-space: nowrap;
+  opacity: 0;
+  transition: 0.4s;
+  padding-left: 14px;
+}
+.sidebar.open li a .links_name{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar.open li a .active{
+  opacity: 1;
+  pointer-events: auto;
+}
+.sidebar.open li.profile a:hover{
+  background: #FAF9F9;
+}
+.sidebar li.profile{
+  opacity: 0;
+}
+.sidebar.open li.profile{
+  opacity: 1;
+  width: 250px;
+  position: fixed;
+  left: 0;
+  bottom: -8px;
+  padding: 10px 14px;
+  background: #555B6E;
+  transition: all 0.5s ease;
+  overflow: hidden;
+}
+.home-section{
+  position: relative;
+  background: #FAF9F9;
+  min-height: 100vh;
+  top: 0;
+  left: 50px;
+  width: calc(100% - 50px);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+.sidebar.open ~ .home-section{
+  left: 250px;
+  width: calc(100% - 250px);
+}
+.home-section .text{
+  display: inline-block;
+  color: #555B6E;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 18px
+}
+@media (max-width: 420px) {
+  .sidebar li .tooltip{
+    display: none;
+  }
+}
