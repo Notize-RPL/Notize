@@ -103,8 +103,7 @@ if(strlen($_SESSION["notizeid"])==0)
                 cols="30"
                 rows="10"
                 class="notes-body"
-                value="<?php echo htmlentities($row['catatan']);?>"
-              ></textarea>
+              ><?php echo htmlentities($row['catatan']);?></textarea>
           </div>
           <?php } ?>
         </div>

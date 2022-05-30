@@ -9,9 +9,8 @@ if(isset($_POST['submit']))
 $nama_tugas=$_POST['nama_tugas'];
 $detail_tugas=$_POST['detail_tugas'];
 $deadline_tugas=$_POST['deadline_tugas'];
-$status_tugas=$_POST['status_tugas'];
 $id_user=$_SESSION["notizeid"];
-$sql=mysqli_query($con,"insert into list_tugas(nama_tugas, detail_tugas, deadline_tugas, status_tugas, id_user) values('$nama_tugas', '$detail_tugas', '$deadline_tugas', '$status_tugas',$id_user)");
+$sql=mysqli_query($con,"insert into list_tugas(nama_tugas, detail_tugas, deadline_tugas, status_tugas, id_user) values('$nama_tugas', '$detail_tugas', '$deadline_tugas', 'Belum',$id_user)");
 echo "<script>alert('Tugas added successfully');</script>";
 echo "<script>window.location.href='tugas.php'</script>";
 }
@@ -69,7 +68,6 @@ echo "<script>window.location.href='tugas.php'</script>";
           		  <input type="text" name="nama_tugas" class="task_input" required>
                 <input type="text" name="detail_tugas" class="task_input">
                 <input type="date" name="deadline_tugas" class="date_input" required>
-                <input type="text" name="status_tugas" class="task_input" required>
           		  <button type="submit" name="submit" id="add_btn" class="add_btn">Add Task</button>
           	    <button type="button" class="close_btn" onclick="closeForm()">Close</button>
               </form>
@@ -93,7 +91,7 @@ echo "<script>window.location.href='tugas.php'</script>";
             			<tr>
                   <?php 
                     $userid=$_SESSION['notizeid'];
-                    $query=mysqli_query($con,"select * from list_tugas where id_user='$userid' ORDER BY deadline_tugas ASC");
+                    $query=mysqli_query($con,"select * from list_tugas where id_user='$userid' AND status_tugas ='Belum' ORDER BY deadline_tugas ASC");
                     $cnt=1;
                     while($row=mysqli_fetch_array($query))
                     {
@@ -108,7 +106,39 @@ echo "<script>window.location.href='tugas.php'</script>";
             			</tr>
                   <?php $cnt=$cnt+1; } ?>
             	</tbody>
+              
             </table></center>
+          
+            <button class="del-button"><a href="delall.php<?php echo $row['id_tugas']?>" onClick="return confirm('Are you sure you want to delete?')">Delete All</a></button>
+          
+            <center>
+              <table class="tfinis">
+              <thead>
+            		<tr>
+                  <th>Tugas</th>
+                  <th style="width: 50%;">Detail</th>
+                  <th >Deadline</th>
+            		</tr>
+            	</thead>
+                <tbody>
+            			<tr>
+                  <?php 
+                    $userid=$_SESSION['notizeid'];
+                    $query=mysqli_query($con,"select * from list_tugas where id_user='$userid' AND status_tugas ='Sudah' ORDER BY deadline_tugas ASC");
+                    $cnt=1;
+                    while($row=mysqli_fetch_array($query))
+                    {
+                    ?> 
+            				<td class="finis"><?php echo htmlentities($row['nama_tugas']);?></td>
+            				<td class="finis"><?php echo htmlentities($row['detail_tugas']);?></td>
+                    <td class="finis"><?php echo htmlentities($row['deadline_tugas']);?></td>
+            			</tr>
+                  <?php $cnt=$cnt+1; } ?>
+            	</tbody>
+              </table>
+            </center>
+            
+            
     </section>
 </div>
 </div>

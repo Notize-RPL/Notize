@@ -63,7 +63,7 @@ if(isset($_POST['update']))
 
     <section class="home-section">
       <div class="text">Tugas</div>
-          <div class="content">
+          <div class="upcontent">
           <?php
           $id=intval($_GET['id']);
           $userid=$_SESSION["notizeid"];
@@ -71,11 +71,14 @@ if(isset($_POST['update']))
           while($row=mysqli_fetch_array($query))
           {
           ?>	
-            <form method="post" action="" class="input_form">
-          		<input type="text" name="nama_tugas" class="task_input" value="<?php echo  htmlentities($row['nama_tugas']);?>">
-              <input type="text" name="detail_tugas" class="task_input" value="<?php echo  htmlentities($row['detail_tugas']);?>">
-              <input type="date" name="deadline_tugas" class="date_input" value="<?php echo  htmlentities($row['deadline_tugas']);?>">
-              <input type="text" name="status_tugas" class="task_input" value="<?php echo  htmlentities($row['status_tugas']);?>">
+            <form method="post" action="" class="form-container">
+          		<input type="text" name="nama_tugas" class="utask_input" value="<?php echo  htmlentities($row['nama_tugas']);?>"> <br>
+              <input type="text" name="detail_tugas" class="utask_input" value="<?php echo  htmlentities($row['detail_tugas']);?>"> <br>
+              <input type="date" name="deadline_tugas" class="udate_input" value="<?php echo  htmlentities($row['deadline_tugas']);?>"> <br>
+               <input type="radio" name="status_tugas" class="ustatus_input" value="Sudah" <?php echo  htmlentities($row['status_tugas']);?>>
+               <label for="Sudah">Sudah</label> <br>
+               <input type="radio" name="status_tugas" class="ustatus_input" value="Belum" <?php echo  htmlentities($row['status_tugas']);?>>
+               <label for="Belum">Belum</label> <br>
           		<button type="submit" name="update" id="add_btn" class="add_btn">Add Task</button>
           	</form>
             <?php } ?>
@@ -97,7 +100,7 @@ if(isset($_POST['update']))
             			<tr>
                   <?php 
                     $userid=$_SESSION['notizeid'];
-                    $query=mysqli_query($con,"select * from list_tugas where id_user='$userid' ORDER BY deadline_tugas ASC");
+                    $query=mysqli_query($con,"select * from list_tugas where id_user='$userid' AND status_tugas ='Belum' ORDER BY deadline_tugas ASC");
                     $cnt=1;
                     while($row=mysqli_fetch_array($query))
                     {
@@ -113,6 +116,33 @@ if(isset($_POST['update']))
                   <?php $cnt=$cnt+1; } ?>
             	</tbody>
             </table></center>
+
+            <center>
+              <table class="tfinis">
+              <thead>
+            		<tr>
+                  <th>Tugas</th>
+                  <th style="width: 50%;">Detail</th>
+                  <th >Deadline</th>
+            		</tr>
+            	</thead>
+                <tbody>
+            			<tr>
+                  <?php 
+                    $userid=$_SESSION['notizeid'];
+                    $query=mysqli_query($con,"select * from list_tugas where id_user='$userid' AND status_tugas ='Sudah' ORDER BY deadline_tugas ASC");
+                    $cnt=1;
+                    while($row=mysqli_fetch_array($query))
+                    {
+                    ?> 
+            				<td class="finis"><?php echo htmlentities($row['nama_tugas']);?></td>
+            				<td class="finis"><?php echo htmlentities($row['detail_tugas']);?></td>
+                    <td class="finis"><?php echo htmlentities($row['deadline_tugas']);?></td>
+            			</tr>
+                  <?php $cnt=$cnt+1; } ?>
+            	</tbody>
+              </table>
+            </center>
     </section>
 </div>
 </div>

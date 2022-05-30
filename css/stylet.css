@@ -55,7 +55,7 @@ thead{
   cursor: pointer;
   opacity: 0.8;
   margin-top:3%;
-  margin-left: 76%;
+  margin-left: 73%;
   border-radius: 10px;
 }
 
@@ -88,3 +88,27 @@ thead{
   background-color: #555B6E;
   outline: none;
 }
+
+.finis {
+	text-decoration: line-through;
+}
+
+.tfinis{
+	margin-top: 2%;
+}
+
+.ustatus_input{
+	margin: 10px;
+}
+
+.del-button {
+	background-color: #555B6E;
+	color: #faf9f9;
+	padding: 16px 20px;
+	border: none;
+	cursor: pointer;
+	opacity: 0.8;
+	margin-top:28%;
+	margin-left: 83%;
+	border-radius: 10px;
+  }
