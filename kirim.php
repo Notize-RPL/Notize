@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
 
     if($mail->send())
     {
-        '<a href="login.php">';
+        '<a href="signup.php">';
     }
     else{
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
@@ -72,7 +72,7 @@ if(isset($_POST['submit']))
     $query=mysqli_query($con,"insert into users(username,email,password) values('$signname','$signemail','$npwd')");
     if($query){
         echo "<script>alert('Registration successfull');</script>"; 
-        echo "<script>window.location.href ='login.php'</script>";
+        echo "<script>window.location.href ='signup.php'</script>";
     } else {
     echo "<script>alert('Something went wrong. Please try again');</script>"; 
     echo "<script>window.location.href ='signup.php'</script>";

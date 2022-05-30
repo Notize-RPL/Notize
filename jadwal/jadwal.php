@@ -56,9 +56,7 @@ if(strlen($_SESSION["notizeid"])==0)
   <div class="grid-item">
     <h1 class="days">Senin</h1>  
    <table class="table1">
-    <tr>
-      <th>Mata<br>Kuliah</th>
-    </tr>
+
         <?php 
         $userid=$_SESSION['notizeid'];
         $query=mysqli_query($con,"select * from list_jadwal where id_user='$userid' AND hari_matkul ='senin'");
@@ -82,9 +80,7 @@ if(strlen($_SESSION["notizeid"])==0)
       <div class="grid-item">
     <h1 class="days">Selasa</h1>  
    <table class="table1">
-    <tr>
-      <th>Mata<br>Kuliah</th>
-    </tr>
+
         <?php 
         $userid=$_SESSION['notizeid'];
         $query=mysqli_query($con,"select * from list_jadwal where id_user='$userid' AND hari_matkul ='selasa'");
@@ -99,7 +95,7 @@ if(strlen($_SESSION["notizeid"])==0)
             <?php echo htmlentities($row['jam_matkul_akhir']);?>
                <br>
                 <a class="action" href="delete_jadwal.php?id=<?php echo $row['id_jadwal']?>" onClick="return confirm('Are you sure you want to delete?')">Hapus</a>
-              </th>
+            </th>
           </tr>
         <?php $cnt=$cnt+1; } ?>
        </table>
@@ -108,9 +104,7 @@ if(strlen($_SESSION["notizeid"])==0)
       <div class="grid-item">
     <h1 class="days">Rabu</h1>  
    <table class="table1">
-    <tr>
-      <th>Mata<br>Kuliah</th>
-    </tr>
+
         <?php 
         $userid=$_SESSION['notizeid'];
         $query=mysqli_query($con,"select * from list_jadwal where id_user='$userid' AND hari_matkul ='rabu'");
@@ -134,9 +128,7 @@ if(strlen($_SESSION["notizeid"])==0)
       <div class="grid-item">
     <h1 class="days">Kamis</h1>  
    <table class="table1">
-    <tr>
-      <th>Mata<br>Kuliah</th>
-    </tr>
+
         <?php 
         $userid=$_SESSION['notizeid'];
         $query=mysqli_query($con,"select * from list_jadwal where id_user='$userid' AND hari_matkul ='kamis'");
@@ -160,9 +152,7 @@ if(strlen($_SESSION["notizeid"])==0)
       <div class="grid-item">
     <h1 class="days">Jum`at</h1>  
    <table class="table1">
-    <tr>
-      <th>Mata<br>Kuliah</th>
-    </tr>
+
         <?php 
         $userid=$_SESSION['notizeid'];
         $query=mysqli_query($con,"select * from list_jadwal where id_user='$userid' AND hari_matkul ='jumat'");
@@ -186,9 +176,7 @@ if(strlen($_SESSION["notizeid"])==0)
       <div class="grid-item">
     <h1 class="days">Sabtu</h1>  
    <table class="table1">
-    <tr>
-      <th>Mata<br>Kuliah</th>
-    </tr>
+
         <?php 
         $userid=$_SESSION['notizeid'];
         $query=mysqli_query($con,"select * from list_jadwal where id_user='$userid' AND hari_matkul ='sabtu'");
@@ -212,9 +200,7 @@ if(strlen($_SESSION["notizeid"])==0)
       <div class="grid-item">
     <h1 class="days">Minggu</h1>  
    <table class="table1">
-    <tr>
-      <th>Mata<br>Kuliah</th>
-    </tr>
+
         <?php 
         $userid=$_SESSION['notizeid'];
         $query=mysqli_query($con,"select * from list_jadwal where id_user='$userid' AND hari_matkul ='minggu'");

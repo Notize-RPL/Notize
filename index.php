@@ -15,7 +15,7 @@
     
 <header class="header">
     <img src="img/Group 11.png" alt="logo">
-    <a href="http://localhost/notize-php/login.php" class="login">Log In</a>
+    <a href="http://localhost/notize-php/signup.php" class="login">Log In</a>
     <div class="sign">
         <a href="http://localhost/notize-php/signup.php" class="signup">Sign Up</a>
     </div>
