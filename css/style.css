@@ -6,22 +6,16 @@
       font-weight: 300;  
       font-size: 15px;  
       line-height: 1.7;  
-      color: #c4c3ca;  
-      background-color: #1f2029;  
+      color: #0a0a0a;  
+      background-color: #89b0ae;  
       overflow-x: hidden;  
  }  
  a {  
-      cursor: pointer;  
-  transition: all 200ms linear;  
+    cursor: pointer;  
+    transition: all 200ms linear;  
  }  
  a:hover {  
       text-decoration: none;  
- }  
- .link {  
-  color: #c4c3ca;  
- }  
- .link:hover {  
-  color: #ffeba7;  
  }  
  p {  
   font-weight: 500;  
@@ -60,7 +54,7 @@
     padding: 0;  
     margin: 10px auto;  
     cursor: pointer;  
-    background-color: #ffeba7;  
+    background-color: #faf9f9;  
    } 
    .checkbox:checked + label:before,  
  .checkbox:not(:checked) + label:before{  
@@ -69,8 +63,8 @@
   width: 36px;  
   height: 36px;  
   border-radius: 50%;  
-  color: #ffeba7;  
-  background-color: #102770;  
+  color: #89b0ae;  
+  background-color: #ffd6ba;  
   font-family: 'unicons';  
   content: '\eb4f';  
   z-index: 20;  
@@ -107,7 +101,7 @@
    .card-front, .card-back {  
     width: 100%;  
     height: 100%;  
-    background-color: #2a2b38;  
+    background-color: #faf9f9;  
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');  
     background-position: bottom center;  
     background-repeat: no-repeat;  
@@ -156,8 +150,8 @@
     line-height: 22px;  
     letter-spacing: 0.5px;  
     outline: none;  
-    color: #c4c3ca;  
-    background-color: #1f2029;  
+    color: #555b6e;  
+    background-color: #faf9f9;  
     border: none;  
     -webkit-transition: all 200ms linear;  
     transition: all 200ms linear;  
@@ -177,24 +171,24 @@
     font-size: 24px;  
     line-height: 48px;  
     text-align: left;  
-    color: #ffeba7;  
+    color: #555b6e;  
     -webkit-transition: all 200ms linear;  
      transition: all 200ms linear;  
    }  
    .form-group input:-ms-input-placeholder {  
-    color: #c4c3ca;  
+    color: #ffd6ba;  
     opacity: 0.7;  
     -webkit-transition: all 200ms linear;  
      transition: all 200ms linear;  
    }  
    .form-group input::-moz-placeholder {  
-    color: #c4c3ca;  
+    color: #ffd6ba;  
     opacity: 0.7;  
     -webkit-transition: all 200ms linear;  
      transition: all 200ms linear;  
    }  
    .form-group input::-webkit-input-placeholder {  
-    color: #c4c3ca;  
+    color: #ffd6ba;  
     opacity: 0.7;  
     -webkit-transition: all 200ms linear;  
      transition: all 200ms linear;  
@@ -243,18 +237,18 @@
     -ms-flex-pack: center;  
     text-align: center;  
     border: none;  
-    background-color: #ffeba7;  
-    color: #102770;  
+    background-color: #ffd6ba;  
+    color: #555b6e;  
     box-shadow: 0 8px 24px 0 rgba(255,235,167,.2);  
    }  
    .btn:active,  
    .btn:focus{   
-    background-color: #102770;  
-    color: #ffeba7;  
+    background-color: #555b6e;  
+    color: #ffd6ba;  
     box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);  
    }  
    .btn:hover{   
-    background-color: #102770;  
-    color: #ffeba7;  
+    background-color: #555b6e;  
+    color: #ffd6ba;  
     box-shadow: 0 8px 24px 0 rgba(16,39,112,.2);  
    }  

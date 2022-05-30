@@ -1,0 +1,153 @@
+.add {
+  float: right;
+  margin-right: 100px;
+  margin-top: 50px;
+  padding : 10px;
+  border-radius: 10px;
+  background-color: #FFD6BA; 
+}
+a{
+  text-decoration: none;
+  color: #555B6E;
+}
+.timetable{
+    margin: 100px;
+    margin-top:50px;
+    border-radius: 10px;
+    background: #89b0ae;
+  }
+  
+.table1 {
+  border-collapse: collapse;
+  color: #555B6E;
+  width: 100%;
+  border: 1px solid #f2f5f7;
+}
+
+.table1 tr{
+  background:#BEE3DB;
+  color: #555B6E;
+  width: 100%;
+}
+
+.table1, th{
+  text-align: center;
+}
+
+.table1 tr:nth-child(even) {
+  background-color: #FFD6BA;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  width: 100%;
+}
+.add-jadwal{
+  margin-top: 100px;
+}
+.grid-item {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 100px;
+  width: 100%;
+}
+.card {
+  width: 60%;
+  padding: 30px;
+  background: #BEE3DB;
+  margin: auto;
+  margin-top:30px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.back {
+  font-size: 14px;
+  background-color: #FFD6BA;
+  border: none;
+  color: #FAF9F9;
+  padding: 12px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+select{
+  padding: 8px;
+}
+
+input[type="text"], input[type="time"]{
+  padding: 8px;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+
+.simpan {
+  width: 100%;
+  padding: 15px;
+  background-color: #89b0ae;
+  color: #FAF9F9;
+  border: none;
+}
+
+.schedule:hover{
+  background-color: rgba(20,20,100,0.4)
+}
+
+.action {
+  position: relative;
+  z-index: 3;
+  color: #FAF9F9;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+.action:hover {
+  opacity: 1;
+}
+
+.days{
+  color: #555B6E;
+}
+
+.form-group{
+  padding-top: 20px;
+  margin: 20px;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+.form-jadwal p{
+  margin-left: 25%;
+}
+
+.form-jadwal input{
+  border-width: thin;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:#f8f8f8;
+}
+
+.form-jadwal select{
+  border-width: thin;
+  width: 50%;
+  margin-left: 25%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color:#f8f8f8;
+}

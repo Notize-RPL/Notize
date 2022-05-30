@@ -1,0 +1,90 @@
+form {
+	width: 100%;
+	margin: 30px auto;
+	border-radius: 5px;
+	padding: 10px;
+	border: 1px solid black;
+}
+p{
+	margin-left: 10%;
+}
+.add_btn {
+	height: 30px;
+	background: #555B6E ;
+	color: 	#faf9f9;
+	padding: 5px 20px;
+	border-style: none;
+	border-radius: 10px;
+	margin-right: 10%;
+}
+.close_btn {
+	height: 30px;
+	background: #FFD6BA ;
+	color: 	#faf9f9;
+	padding: 5px 20px;
+	border-style: none;
+	border-radius: 10px;
+}
+table {
+	margin-top:2%;
+	width:80%;
+	border-collapse: collapse;
+}
+td {
+	border: 2px solid;
+	cursor: pointer;
+	position: relative;
+	padding: 1px 8px 1px 8px;
+	transition: 0.2s;
+	text-align: left;
+	text-align: center;
+	border-left: 1px solid #0000;
+	border-right: 1px solid #0000;
+}
+
+thead{
+	text-align: center;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555B6E;
+  color: #faf9f9;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-top:3%;
+  margin-left: 76%;
+  border-radius: 10px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  bottom: 0;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 60%;
+  padding: 10px;
+  background-color:#faf9f9;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=date] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #555B6E;
+  color: 	#faf9f9;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=date]:focus {
+  background-color: #555B6E;
+  outline: none;
+}
