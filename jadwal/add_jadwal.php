@@ -36,7 +36,7 @@ echo "<script>window.location.href='jadwal.php'</script>";
     <br>
     <div class="card">
         <br>
-        <a href="http://localhost/notize-php/jadwal/jadwal.php" class="back">Kembali</a>
+        <a href="./jadwal.php" class="back">Kembali</a>
         <br><br><br>
         <form action="" method="POST">
         <h1>Update Record</h1>

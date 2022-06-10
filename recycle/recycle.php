@@ -46,7 +46,7 @@ if(strlen($_SESSION["notizeid"])==0)
     <br>
     <div class="card">
         <br>
-        <a href="http://localhost/notize-php/note/note.php" class="back">Kembali</a>
+        <a href="./note/note.php" class="back">Kembali</a>
         <br><br><br>
     <div class="grid-container">
     <div class="grid-item">

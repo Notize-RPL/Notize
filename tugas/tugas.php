@@ -36,17 +36,17 @@ echo "<script>window.location.href='tugas.php'</script>";
       </div>
       <ul class="nav-list">
         <li>
-          <a href="http://localhost/notize-php/jadwal/jadwal.php">
+          <a href="./jadwal/jadwal.php">
             <span class="links_name" id="j">Jadwal</span>
           </a>
         </li>
         <li>
-          <a href="http://localhost/notize-php/tugas/tugas.php">
+          <a href="./tugas/tugas.php">
             <span class="active" id="t">Tugas</span>
           </a>
         </li>
         <li>
-          <a href="http://localhost/notize-php/note/note.php">
+          <a href="./note/note.php">
             <span class="links_name" id="n">Note</span>
           </a>
         </li>
@@ -109,7 +109,7 @@ echo "<script>window.location.href='tugas.php'</script>";
               
             </table></center>
           
-            <button class="del-button"><a href="delall.php<?php echo $row['id_tugas']?>" onClick="return confirm('Are you sure you want to delete?')">Delete All</a></button>
+            <button class="del-button"><a href="delall.php" onClick="return confirm('Are you sure you want to delete?')">Delete All</a></button>
           
             <center>
               <table class="tfinis">

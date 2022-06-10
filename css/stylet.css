@@ -112,3 +112,8 @@ thead{
 	margin-left: 83%;
 	border-radius: 10px;
   }
+
+.del-button a{
+	text-decoration: none;
+	color: 	#faf9f9;
+}

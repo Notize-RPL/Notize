@@ -25,16 +25,16 @@ if(isset($_POST['submit']))
     $mail->isSMTP();                                            // Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'notizeapp@gmail.com';                     // SMTP username
-    $mail->Password   = 'notizec1.';                               // SMTP password
+    $mail->Username   = 'algha_naufal@upi.edu';                     // SMTP username
+    $mail->Password   = 'anakUPI39';                               // SMTP password
     // $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
     $mail->Port       = 587;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
 
     //Recipients
-    $mail->setFrom('notizeapp@gmail.com', 'Notize');
+    $mail->setFrom('algha_naufal@upi.edu', 'Notize');
     $mail->addAddress($signemail, $signname);     // Add a recipient
     
-    $mail->addReplyTo('notizeapp@gmail.com', 'Notize');
+    $mail->addReplyTo('algha_naufal@upi.edu', 'Notize');
     // $mail->addCC('cc@example.com');
     // $mail->addBCC('bcc@example.com');
 
@@ -56,7 +56,7 @@ if(isset($_POST['submit']))
 
     if($mail->send())
     {
-        '<a href="signup.php">';
+        '<a href="login.php">';
     }
     else{
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
@@ -72,7 +72,7 @@ if(isset($_POST['submit']))
     $query=mysqli_query($con,"insert into users(username,email,password) values('$signname','$signemail','$npwd')");
     if($query){
         echo "<script>alert('Registration successfull');</script>"; 
-        echo "<script>window.location.href ='signup.php'</script>";
+        echo "<script>window.location.href ='login.php'</script>";
     } else {
     echo "<script>alert('Something went wrong. Please try again');</script>"; 
     echo "<script>window.location.href ='signup.php'</script>";

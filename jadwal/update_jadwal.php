@@ -32,23 +32,30 @@ if(isset($_POST['update']))
   </head>
   <body>
     <center>
-        <h2 class="add-jadwal">Input Jadwal</h2>
+        <h2 class="add-jadwal">Update Jadwal</h2>
     </center>
     <br>
     <div class="card">
         <br>
         <a href="http://localhost/notize-php/jadwal/jadwal.php" class="back">Kembali</a>
         <br><br><br>
+        <?php
+          $id=intval($_GET['id']);
+          $userid=$_SESSION["notizeid"];
+          $query=mysqli_query($con,"select * from list_jadwal where id_jadwal='$id' and id_user='$userid'");
+          while($row=mysqli_fetch_array($query))
+          {
+        ?>	
         <form action="" method="POST">
         <h1>Update Record</h1>
         <div class="form-jadwal">
             <p>Nama Mata Kuliah <br>
-            <input type="text" placeholder="Enter Mata Kuliah"  name="nama_matkul" class="form-control" required></p>
+            <input type="text" placeholder="Enter Mata Kuliah"  name="nama_matkul" class="form-control" value="<?php echo  htmlentities($row['nama_matkul']);?>" required></p>
         </div>
         <div class="form-jadwal">
             <p>Hari<br></p>
             <div class="radio">
-                <select id="hari_matkul" name="hari_matkul" class="form-control" required>
+                <select id="hari_matkul" name="hari_matkul" class="form-control" value="<?php echo  htmlentities($row['hari_matkul']);?>" required>
                     <option value="Senin">Senin</option>
                     <option value="Selasa">Selasa</option>
                     <option value="Rabu">Rabu</option>
@@ -61,17 +68,18 @@ if(isset($_POST['update']))
         </div>
         <div class="form-jadwal">
             <p>Jam Mulai <br>
-            <input type="time"   name="jam_matkul_mulai" class="form-control" required></p>
+            <input type="time"   name="jam_matkul_mulai" class="form-control" value="<?php echo  htmlentities($row['jam_matkul_mulai']);?>" required></p>
         </div>
 		<div class="form-jadwal">
             <p>Jam Selesai <br>
-            <input type="time"   name="jam_matkul_akhir" class="form-control" required></p>
+            <input type="time"   name="jam_matkul_akhir" class="form-control" value="<?php echo  htmlentities($row['jam_matkul_akhir']);?>" required></p>
         </div>
         
         <div class="form-group">
-            <button type="submit" name="submit" class="simpan">Submit</button>
+            <button type="submit" name="update" class="simpan">Submit</button>
             </div>
         </form>
+        <?php }  ?>
     </div>
 </body>
 </html>

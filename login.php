@@ -10,7 +10,7 @@ if($count==0){
 $query=mysqli_query($con,"insert into users(username,email,password) values('$signname','$signemail','$npwd')");
 if($query){
 echo "<script>alert('Registration successfull');</script>"; 
-echo "<script>window.location.href ='signup.php'</script>";
+echo "<script>window.location.href ='login.php'</script>";
 } else {
 echo "<script>alert('Something went wrong. Please try again');</script>"; 
 echo "<script>window.location.href ='signup.php'</script>";
@@ -60,7 +60,25 @@ if(isset($_POST['login']))
             <div class="card-3d-wrap mx-auto">  
              <div class="card-3d-wrapper">  
               <div class="card-front">  
-               <div class="center-wrap">  
+              <div class="center-wrap">  
+                <div class="section text-center">  
+                 <h4 class="mb-4 pb-3">Log In</h4>  
+                 <form method="post"> 
+                  <div class="form-group">  
+                    <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">  
+                    <i class="input-icon uil uil-at"></i>  
+                  </div>       
+                  <div class="form-group mt-2">  
+                    <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off">  
+                    <i class="input-icon uil uil-lock-alt"></i>  
+                  </div>  
+                  <button  class="btn mt-4"  type="submit" name="login">Submit</button>
+                 <form>
+                  </div>  
+                 </div>  
+                </div>  
+              <div class="card-back">  
+              <div class="center-wrap">  
                 <div class="section text-center">  
                  <h4 class="mb-4 pb-3">Sign Up</h4>  
                   <form method = "post" action="kirim.php"> 
@@ -81,24 +99,6 @@ if(isset($_POST['login']))
                   </div>  
                  </div>  
                 </div>  
-              <div class="card-back">  
-               <div class="center-wrap">  
-                <div class="section text-center">  
-                 <h4 class="mb-4 pb-3">Log In</h4>  
-                 <form method="post"> 
-                  <div class="form-group">  
-                    <input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off" required>  
-                    <i class="input-icon uil uil-at"></i>  
-                  </div>       
-                  <div class="form-group mt-2">  
-                    <input type="password" name="logpass" class="form-style" placeholder="Your Password" id="logpass" autocomplete="off" required>  
-                    <i class="input-icon uil uil-lock-alt"></i>  
-                  </div>  
-                  <button  class="btn mt-4"  type="submit" name="login">Submit</button>
-                 <form>
-                  </div>  
-                 </div>  
-                </div>  
                </div>  
               </div>  
              </div>  
@@ -108,3 +108,4 @@ if(isset($_POST['login']))
        </div>  
   </body>
 </html>
+

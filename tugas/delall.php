@@ -1,7 +1,6 @@
 <?php
     session_start();
     include_once('../config/config.php');
-    $nid=$_GET['id'];
     $userid=$_SESSION["notizeid"];
     $query=mysqli_query($con,"select * from list_tugas where id_user='$userid'");
     $row=mysqli_fetch_array($query);

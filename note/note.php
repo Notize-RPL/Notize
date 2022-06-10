@@ -33,17 +33,17 @@ if(strlen($_SESSION["notizeid"])==0)
       </div>
       <ul class="nav-list">
         <li>
-          <a href="http://localhost/notize-php/jadwal/jadwal.php">
+          <a href="./jadwal/jadwal.php">
             <span class="links_name" id="j">Jadwal</span>
           </a>
         </li>
         <li>
-          <a href="http://localhost/notize-php/tugas/tugas.php">
+          <a href="./tugas/tugas.php">
             <span class="links_name" id="t">Tugas</span>
           </a>
         </li>
         <li>
-          <a href="http://localhost/notize-php/note/note.php">
+          <a href="./note/note.php">
             <span class="active" id="n">Note</span>
           </a>
         </li>
@@ -59,7 +59,7 @@ if(strlen($_SESSION["notizeid"])==0)
     <section class="home-section">
       <div class="container-atas">
         <div class="text">Note</div>
-        <a class="recycle" href="http://localhost/notize-php/recycle/recycle.php">Recycle Bin</a>
+        <a class="recycle" href="./recycle/recycle.php">Recycle Bin</a>
       </div>
 
       <center>
